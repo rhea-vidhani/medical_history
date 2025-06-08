@@ -1,0 +1,202 @@
+create table medical_history (
+  PATIENT_ID SERIAL primary key,
+  Name VARCHAR(100),
+  AGE INT,
+  GENDER VARCHAR(50),
+  BLOOD_TYPE VARCHAR(10) NOT NULL,
+  MEDICAL_CONDITION VARCHAR(50),
+  DATE_ADMISSION DATE,
+  DOCTOR VARCHAR(100),
+  HOSPITAL VARCHAR(100),
+  INSURANCE_PROVIDER VARCHAR(50),
+  BILLING_AMOUNT DECIMAL(10,2),
+  ROOM_NUMBER INT,
+  ADMISSION_TYPE VARCHAR(20),
+  DISCHARGE_DATE DATE,
+  MEDICATION VARCHAR(50) NOT NULL,
+  TEST_RESULTS VARCHAR(50)
+);
+
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('BOBBY JACKSON', 30, 'MALE', 'B-', 'CANCER', '2024-01-31', 
+                                     'MATTHEW SMITH', 'SONS & MILLER', 'BLUECROSS',
+                                     18856.28, 328, 'URGENT', '2024-02-02', 
+                                     'PARACETAMOL', 'NORMAL');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('LesLie TErRy', 62, 'MALE', 'A+', 'OBESITY', '2019-08-20',
+                                     'SAMANTHA DAVIES', 'KIM INC', 'MEDICARE', 33643.33, 265, 'EMERGENCY', 
+                                     '2019-08-26', 'IBUPROFEN', 'INCONCLUSIVE' );
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('daNdY SmITH' , 76, 'FEMALE', 'A-', 'OBESITY', 
+                                     '2022-09-22', 'TIFFANY MITCHELL', 'COOK PLC',
+                                     'AETNA', 27955.10, 205, 'EMERGENCY', '2022-10-07', 'ASPIRIN',
+                                     'NORMAL');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('AnDrew wATts', 28, 'FEMALE', 'O+', 'DIABETES',
+                                     '2020-11-18', 'KEVIN WELLS', 'HERNANDEZ ROGERS AND VANG', 'MEDICARE', 
+                                     37909.78, 450, 'ELECTIVE', '2020-12-18', 'IBUPROFEN', 'ABNORMAL');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('AdrlENNE bELL' , 43, 'FEMALE', 'AB+', 'CANCER' ,
+                                     '2022-09-19', 'KATHLEEN HANNA', 'WHITE-WHITE', 
+                                     'AETNA', 14238.32, 458, 'URGENT', '2022-10-09', 
+                                     'PENICILLIN', 'ABNORMAL');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('EMILY JOHNson', 36 , 'MALE', 'A+', 'ASTHMA', '2023-2-20',
+                                     'TAYLOR NEWTON', 'NUNEZ-HUMPHREY', 'UNITED HEALTH CARE', 
+                                     48145.11, 389, 'URGENT', '2023-12-24', 'IBUPROFEN', 'NORMAL');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('eDwARD eDWARDS', 21, 'FEMALE', 'AB-', 'DIABETES', '2020-11-03', 
+                                     'KELLY OLSEN', 'GROUP MIDDLETON', 'MEDICARE', 19580.87, 389, 'EMERGENCY', 
+                                     '2020-11-15', 'PARACETAMOL', 'INCONCLUSIVE');
+ INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('cHRISTina MARTinez', 20, 'FEMALE', 'A+', 'CANCER',
+                                     '2021-12-28', 'SUZANNE THOMAS', 'POWELL ROBINSON AND VALDEZ', 
+                                     'CIGNA', 45820.46, 277, 'EMERGENCY', '2022-01-07', 'PARACETAMOL', 
+                                     'INCONCLUSIVE');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('jasMiNE AgullAR', 28, 'MALE', 'AB+', 'ASTHMA',
+                                     '2020-07-01', 'DANIEL FERGUSON', 'SONS RICH', 'CIGNA',
+                                     50119.22, 316, 'ELECTIVE', '2020-07-14', 'ASPIRIN', 'ABNORMAL');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('cHRIStOPhEr BerG', 58, 'FEMALE', 'AB-', 'CANCER',
+                                     '2021-05-23', 'HEATHER DAY', 'PADILLA-WALKER', 
+                                     'UNITED HEALTH CARE', 19784.63, 249, 'ELECTIVE', 
+                                     '2021-06-22', 'PARACETAMOL', 'INCONCLUSIVE');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('mICHEllE DanieLs', 72, 'MALE', 'O+', 'CANCER', '2020-04-19', 
+                                     'JOHN DUNCAN', 'SCHAEFER-PORTER', 'MEDICARE', 12576.80, 394,
+                                     'URGENT', '2020-04-22', 'PARACETAMOL', 'NORMAL');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('aAron maRtiNez', 38, 'FEMALE', 'A-', 'HYPERTENSION',
+                                     '2023-08-13', 'DOUGLAS MAYO', 'LYNOS-BLAIR', 'MEDICARE',
+                                     7999.59, 288, 'URGENT', '2023-09-05', 'LIPITOR', 'INCONCLUSIVE');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('cOnnOR hANsEN', 75, 'FEMALE', 'A+', 'DIABETES',
+                                     '2019-12-12', 'KENNETH FLETCHER', 'POWERS MILLERS AND FLORES', 
+                                     'CIGNA', 43282.28, 134, 'EMERGENCY', '2019-12-28', 
+                                     'PENICILLIN', 'ABNORMAL');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('RoBERT BaUer', 68, 'FEMALE', 'AB+', 'ASTHMA',
+                                     '2020-05-22', 'THERESA FREEMAN', 'RIVERA-GUTIERREZ', 
+                                     'UNITED HEALTH CARE', 33207.71, 309, 'URGENT', '2020-06-19',
+                                     'LIPITOR', 'NORMAL');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('BrOOKE BRady', 44, 'FEMALE', 'AB+', 'CANCER', 
+                                     '2021-10-08', 'ROBERTA STEWART', 'MORRIS-ARELLANO',
+                                     'UNITED HEALTH CARE', 40701.60, 182, 'URGENT', '2021-10-13',
+                                     'PARACETAMOL', 'NORMAL');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('mS. NatAllE GamBLE', 46, 'FEMALE', 'AB-','OBESITY',
+                                     '2023-01-01', 'MARIA DOUGHERTY', 'CLINE-WILLIAMS',
+                                     'BLUECROSS', 12263.36, 465, 'ELECTIVE', '2023-01-11',
+                                     'ASPIRIN', 'INCONCLUSIVE');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('haley perkins', 63, 'FEMALE', 'A+', 'ARTHRITIS', 
+                                     '2020-06-23', 'ERICA SPENCER', 'CERVANTES-WELLS', 
+                                     'UNITED HEALTH CARE', 2499.85, 114, 'ELECTIVE', 
+                                     '2020-07-14', 'PARACETAMOL', 'NORMAL');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('Mrs. JAmie CAMbell', 38, 'MALE', 'AB-', 'OBESITY', '2020-03-08',
+                                     'JUSTIN KIM', 'TORRES AND HARRISON JONES', 'CIGNA', 
+                                     17440.47, 449, 'URGENT', '2020-04-02', 'PARACETAMOL',
+                                     'ABNORMAL');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('LUKE BURGESS', 34, 'FEMALE', 'A-', 'HYPERTENSION',
+                                     '2021-03-04', 'JUSTIN MOORE JR.', 'HOUSTON PLC', 'BLUECROSS', 
+                                     18843.02, 260, 'ELECTIVE', '2021-03-14', 
+                                     'ASPIRIN', 'ABNORMAL');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('DANIEL SCHMidt', 63, 'MALE', 'B+', 'ASTHMA',
+                                     '2022-11-15', 'DENISE GALLOWAY', 'HAMMOND LTD', 'CIGNA', 
+                                     23762.20, 465, 'ELECTIVE', '2022-11-22', 'PENICILLIN',
+                                     'NORMAL');
+INSERT INTO medical_history (NAME, AGE, GENDER, BLOOD_TYPE, MEDICAL_CONDITION,
+                             DATE_ADMISSION, DOCTOR, HOSPITAL, INSURANCE_PROVIDER, BILLING_AMOUNT, 
+                             ROOM_NUMBER, ADMISSION_TYPE, DISCHARGE_DATE, MEDICATION, TEST_RESULTS)
+                             VALUES ('TIMOTHY BURNS', 67, 'FEMALE', 'A-', 'ASTHMA', 
+                                     '2023-06-28', 'KRISTA SMITH', 'JONES LLC', 'BLUECROSS',
+                                     42.15, 115, 'ELECTIVE', '2023-07-02', 'ASPIRIN', 'NORMAL'); 
+                                     
+select * from medical_history;
+
+SELECT NAME FROM medical_history;
+UPDATE medical_history
+SET NAME = UPPER(NAME);
+select name from medical_history;
+
+SELECT NAME, GENDER FROM medical_history;
+ALTER TABLE medical_history DROP COLUMN GENDER;
+select * from medical_history;
+ALTER TABLE medical_history ADD COLUMN GENDER VARCHAR(20);
+UPDATE medical_history SET GENDER = 'MALE' WHERE PATIENT_ID in (1, 3,4,7,10,12,13,14,19,20);
+UPDATe medical_history SET GENDER = 'FEMALE' WHERE PATIENT_ID in (2,5,6,8,9,11,15,16,17,18);
+SELECT NAME, GENDER FROM medical_history;
+
+DELETE FROM medical_history WHERE PATIENT_ID = 21;
+SELECT PATIENT_ID FROM medical_history;
+SELECT * FROM medical_history;
+
+SELECT NAME, MEDICAL_CONDITION, TEST_RESULTS, BILLING_AMOUNT FROM medical_history ORDER BY BILLING_AMOUNT DESC LIMIT 5;
+
+SELECT NAME, AGE, MEDICAL_CONDITION FROM medical_history WHERE AGE >= 40;
+
+SELECT * FROM medical_history WHERE (GENDER = 'FEMALE' AND AGE < 40) AND (MEDICAL_CONDITION = 'DIABETES' OR 
+                                                                          ADMISSION_TYPE = 'EMERGENCY');
+                                                                          
+SELECT PATIENT_ID AS PATIENTID FROM medical_history;  
+
+SELECT DISTINCT MEDICAL_CONDITION FROM medical_history;
+
+SELECT MEDICAL_CONDITION, AVG(BILLING_AMOUNT) AS AVERAGE_AMOUNT FROM medical_history GROUP BY MEDICAL_CONDITION 
+ORDER BY AVERAGE_AMOUNT DESC;
+
+SELECT MEDICAL_CONDITION, GENDER, COUNT(*) AS patient_count FROM medical_history GROUP BY MEDICAL_CONDITION, GENDER;
+
+SELECT HOSPITAL, COUNT(ADMISSION_TYPE) AS NUMBER_OF FROM medical_history WHERE ADMISSION_TYPE = 'URGENT' 
+GROUP BY HOSPITAL ORDER BY NUMBER_OF DESC;
+
+SELECT PATIENT_ID, MEDICAL_CONDITION, TEST_RESULTS, (DISCHARGE_DATE - DATE_ADMISSION) AS TOTAL_STAY
+FROM medical_history ORDER BY TOTAL_STAY DESC;
+
+SELECT PATIENT_ID, NAME, MEDICAL_CONDITION, BILLING_AMOUNT,(BILLING_AMOUNT/(DISCHARGE_DATE - DATE_ADMISSION)) AS PER_NIGHT_STAY 
+FROM medical_history;
